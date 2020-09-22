@@ -1,7 +1,12 @@
 <html>
 
 <head>
-   <link rel="stylesheet" href="index3.css">
+    <style>
+         #name{
+        background-color:red;
+    }
+    </style>
+   
 </head>
 
 <body>
@@ -11,8 +16,11 @@
     <input type="button"
     id="btn" value="提交">
 
-    <script src="index3.js">
-       
+    <script >
+     var target=document.getElementById("submit");
+target.onclick=function(){
+    alert("我被点击了")
+}  
     </script>
 </body>
 </html>
