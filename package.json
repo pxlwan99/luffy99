@@ -1,0 +1,25 @@
+{
+  "name": "luffy99",
+  "version": "1.0.0",
+  "description": "web学习",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxlwan99/luffy99.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pxlwan99/luffy99/issues"
+  },
+  "homepage": "https://github.com/pxlwan99/luffy99#readme"
+}
