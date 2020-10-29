@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>锚点链接</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            margin: 0px auto;
+        }
+
+        .nav {
+            display: inline-block;
+            width: 110px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        span {
+            padding-right: 15px;
+            margin-top: 8px;
+            color: #666;
+        }
+
+        div {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 6px; 
+        }
+
+        div input {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+
+        }
+
+        .na {
+            display: inline-block;
+            width: 110px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .tle {
+            margin-top: 21px;
+        }
+
+        .ins {
+            width: 336px;
+            height: 36px;
+            margin-bottom: 10px;
+        }
+
+        .inse {
+            width: 340px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .se {
+            width: 166px;
+            height: 40px;
+            margin-bottom: 10px;
+            margin-right: 8px;
+        }
+        </style>
+</head>
+<body>
+    <form action="#" method="GET">
+        <span class="nav"> *真实姓名:</span>
+
+        <input class="ins " type="text" placeholder="请输入真实姓名,只能填写中文">
+        <br>
+        <span class="nav">*证件类型:</span>
+        <select class="inse">
+            <option>身份证</option>
+        </select>
+
+
+        <br>
+        <span class="nav"> *证件号:</span>
+        <input class="ins " type="text" placeholder="请输入证件号">
+
+        <br>
+        <span class="nav">*政治面貌:</span>
+        <select class="inse "">
+            <option selected=" selected">请输入</option>
+            <option>中国共产党党员</option>
+            <option>预备党员</option>
+            <option>共青团员</option>
+            <option>民革党员</option>
+            <option>民盟盟员</option>
+            <option>民建会员</option>
+            <option>民进会员</option>
+            <option>农工党党员</option>
+            <option>致公党党员</option>
+            <option>九三学社社员</option>
+            <option>台盟盟员</option>
+            <option>无党派人士</option>
+            <option>群众</option>
+        </select>
+
+        <br>
+        <span class="nav"> *省直单位：</span>
+        <div> <input type="radio" name="nv">否</div>
+        <div><input type="radio" name="nv">是</div>
+
+        <br>
+        <span class="nav"> *居住地区:</span>
+        <select class="se ">
+            <option>请选择</option>
+            <option>郑州市</option>
+            <option>开封市</option>
+            <option>景德镇市</option>
+            <option>鹰潭市</option>
+            <option>福州市</option>
+            <option>抚州市</option>
+        </select>
+        <select class="se ">
+            <option>请选择</option>
+            <option>郑州区</option>
+            <option>开封区</option>
+            <option>景德镇区</option>
+            <option>鹰潭区</option>
+            <option>福州区</option>
+            <option>抚州区</option>
+        </select>
+
+        <br>
+        <span class="nav"> *地址：</span>
+        <input class="inse " type="text" placeholder="请输入街道地址">
+
+        <br>
+        <span class="nav"> *性别:</span>
+        <div><input type="radio" name="na">男</div>
+        <div> <input type="radio" name="na">女</div>
+
+
+        <br>
+        <span class="nav">*民族：</span>
+        <select class="inse ">
+            <option>汉族</option>
+            <option>回族</option>
+            <option>维吾尔族</option>
+            <option>苗族</option>
+            <option>藏族</option>
+        </select>
+
+        <br>
+        <table class="tle">
+            <tr>
+                <td><span class="na"> *擅长领域</span></td>
+                <td>
+                    <span><input type="checkbox">文化志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">文化志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span><input type="checkbox">文化志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span><input type="checkbox">文化志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span><input type="checkbox">文化志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                    <span><input type="checkbox">教育志愿者</span>
+                </td>
+            </tr>
+            </tr>
+        </table>
+        <table class="tle">
+            <tr>
+                <td><span class="na">*服务领域</span> </td>
+                <td>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                    <span><input type="checkbox">扶贫济困</span>
+                </td>
+            </tr>
+        </table>
+        <span class="nav"> 从业情况:</span>
+        <select class="inse ">
+            <option>其他</option>
+            <option>公务员</option>
+            <option>军人</option>
+            <option>会计</option>
+            <option>学生</option>
+            <option>农民</option>
+        </select>
+        <br>
+        <span class="nav"> 教育程度:</span>
+        <select class="inse ">
+            <option>小学</option>
+            <option>高中</option>
+            <option>专科</option>
+            <option>本科</option>
+            <option>硕士</option>
+            <option>博士</option>
+        </select>
+        <br>
+        <span class="nav">所在单位/学校：</span>
+
+        <input class="ins" type="text" placeholder="请输入您所在单位/学校的名称">
+    </form>
+</body>
+
+</html>
