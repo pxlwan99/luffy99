@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%; /* 这里100%，它继承了wrapper的高度，所以还是500px */
   opacity: 0;
-  transition: 1s;
+  transition:1s;
 }
 
 
