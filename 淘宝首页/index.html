@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝网-淘！我喜欢</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="favicon.ico">
+        <!-- <style>
+            h3{
+                line-height: normal;
+                normal的大小有浏览器和字体大小决定
+                line-height: 1.5;
+                1.5 若子级没有设置行高就会继承父级的行高
+                line-height: 200%;
+                百分比 所有的子元素先算出父级的行高然后所有子元素继承算出来的值
+                line-height: 50px;固定值，给多少是多少
+                line-height: 5em;
+                行高值计算拿上面的值乘字体的像素
+            }
+        </style> -->
+</head>
+<body>
+    <!-- 头部信息 -->
+    <div id="headmassage" class="clearfix layer">
+        <ul class="fl">
+            <li>
+                <span>中国大陆</span>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+            <li class="mr7">
+                <a href="#" class="login mr7">亲，请登录</a>
+                <a href="#">免费注册</a>
+            </li>
+            <li>
+                <a href="#">手机逛淘宝</a>
+            </li>
+        </ul>
+        <ul class="fr">
+            <li>
+                <a href="#">我的淘宝</a>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+            <li>
+                <span class="iconfont mr5 c4">&#xe69e;</span>
+                <a href="#">购物车</a>
+                <strong>0</strong>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+            <li>
+               
+                <a href="#"><span class="iconfont mr5 stroe">&#xe70b;</span>收藏夹</a>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+            <li>
+                <a href="#">商品分类</a>
+            </li>
+            <li class="line">|</li>
+            <li>
+                <a href="#">千牛卖家中心</a>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+            <li>
+                <a href="#">联系客服</a>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+            <li>
+                <span class="iconfont c4 mr5">&#xe618;</span>
+                <a href="#">网站导航</a>
+                <span class="iconfont" class="arrow">&#xe60b;</span>
+            </li>
+        </ul>
+    </div>
+    <!-- 头部搜索 -->
+    <div id="headSearch">
+        <div class="clearfix layer">
+            <!-- <h1><a href="#"><img src="images/tao.jpg" alt="淘宝网"></a></h1> -->
+            <h1 class="fl"><a href="#">淘宝网</a></h1>
+               <div class="code fr">
+                   <span class="iconfont close">&#xe617;</span>
+                   <a href="https://www.taobao.com">
+                    <span class="c5">手机淘宝</span>
+                   <img src="images/index.webp" alt="">
+                </a>
+               </div>      
+               
+               <div class="search">
+                   <ul class="searchTab clearfix">
+                       <li class="active">宝贝</li>
+                       <li>天猫</li>
+                       <li>店铺</li>
+                   </ul>
+     
+                   <div class="searchContent clearfix">
+                       <form action="">
+                        <div class="searchBox fl">
+                            <input type="text">
+                            <div class="placeholder">
+                                <i class="iconfont">&#xe600;</i>
+                                <span>网红裤腰带 洋气</span>
+                            </div>
+                            <span class="iconfont imgSearch">&#xe634;</span>
+ 
+                        </div>
+                         <div class="btn fl">
+                            <button type="submit">搜索</button>
+                        </div>
+                       </form>
+                    </div>
+
+                    <div class="hotKey">
+                        <a href="#"> 新款连衣裙</a>
+                        <a href="#">四件套</a>
+                        <a href="#" class="c5">潮流T恤</a>
+                        <a href="#">时尚女鞋</a>
+                        <a href="#">短裤</a>
+                        <a href="#">半身裙</a>
+                        <a href="#">男士外套</a>
+                        <a href="#">墙纸</a>
+                        <a href="#">行车记录仪</a>
+                        <a href="#">新款男鞋</a>
+                        <a href="#">耳机</a>
+                        <a href="#">时尚女包</a>
+                        <a href="#">沙发</a> 
+                    </div>
+               </div>
+        </div>
+    </div>
+
+    <!-- 导航 -->
+    <div id="nav" class="layer clearfix">
+        <h2 class="fl">主题市场</h2>
+        <ul>
+       <li class="size"><a href="#">天猫</a></li>
+       <li class="size"><a href="#">聚划算</a></li>
+       <li class="size"><a href="#">天猫超市</a></li>
+       <li class="line">|</li>
+       <li><a href="#">淘抢购</a></li>
+       <li><a href="#">电器城</a></li>
+       <li><a href="#">司法拍卖</a></li>
+       <li><a href="#">淘宝心选</a></li>
+       <li><a href="#">兴农扶贫</a></li>
+       <li class="line">|</li>
+       <li><a href="#">飞猪旅行</a></li>
+       <li><a href="#">智能生活</a></li>
+       <li><a href="#">苏宁易购</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <!-- 首屏内容 -->
+    <div id="firstScreen" class="layer clearfix">
+       <!-- 左边的内容 -->
+       <div class="firstLeft fl">
+            <!-- 侧边导航 -->
+            <div class="sideNav fl"> 
+                <ul>
+                    <li>
+                        <a href="#">女装</a> /
+                        <a href="#">内衣</a> /
+                        <a href="#">家居</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">女鞋</a> /
+                        <a href="#">男鞋</a> /
+                        <a href="#">箱包</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">母婴</a> /
+                        <a href="#">童装</a> /
+                        <a href="#">玩具</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">男装</a> /
+                        <a href="#">运动户外</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">美妆</a> /
+                        <a href="#">彩妆</a> /
+                        <a href="#">个护</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">手机</a> /
+                        <a href="#">数码</a> /
+                        <a href="#">企业</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">大家电</a> /
+                        <a href="#">生活电器</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">零食</a> /
+                        <a href="#">生鲜</a> /
+                        <a href="#">茶酒</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">厨具</a> /
+                        <a href="#">收纳</a> /
+                        <a href="#">清洁</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">家纺</a> /
+                        <a href="#">家饰</a> /
+                        <a href="#">鲜花</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">图书音像</a> /
+                        <a href="#">文具</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">医药保健</a> /
+                        <a href="#">进口</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">汽车</a> /
+                        <a href="#">二手车</a> /
+                        <a href="#">用品</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">房产</a> /
+                        <a href="#">装修家具</a> /
+                        <a href="#">建材</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                    <li>
+                        <a href="#">手表</a> /
+                        <a href="#">眼镜</a> /
+                        <a href="#">珠宝饰品</a><span class="iconfont fr">&#xe549;</span>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- 图片1容器 -->
+            <div class="img1Box fl">
+                <div class="pic fl">
+                    <div class="img">
+                        <a href="#"><img src="images/pic.jpg" alt=""></a>
+                    </div>
+
+                    <button class="iconfont leftBtn">&#xe525;</button>
+                    <button class="iconfont rightBtn">&#xe549;</button>
+
+                    <div class="circle">
+                        <span class="active"></span><span></span><span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="ad fr">
+                    <a href="#"><img src="images/IMG_20190926_232305.jpg" alt=""></a>
+                </div>
+
+            </div>
+
+            <!-- 图片2容器 -->
+            <div class="img2Box fr">
+                <div class="pic fl">
+                    <div class="picTitle">
+                        <div class="text clearfix">
+                            <span class="fl bg">理想生活上天猫</span>
+                            <span class="fr"><i>1</i>/6</span>
+                        </div>
+                        <div class="line">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <a href="#"><img src="images/line1.jpg" alt=""></a><a href="#"><img src="images/line2.jpg" alt=""></a>
+                    </div>
+
+                    <button class="iconfont leftBtn">&#xe525;</button>
+                    <button class="iconfont rightBtn">&#xe549;</button>
+                </div>
+                <div class="ad fr">
+                    <p class="title">今日特卖</p>
+                    <a href="#"><img src="images/line3.jpg" alt=""></a>
+                </div>
+
+            </div>
+
+            <!-- 淘宝头条 -->
+            <div class="news fl">
+                <div class="hd fl">
+                    <h3>淘宝头条</h3>
+                    <p>让你的生活更有趣</p>
+                </div>
+                <div class="newList fr">
+                    <div class="imtem">
+                        <a href="#" class="fl img"><img src="images/kobe.jpg"></a>
+                        <h4><a href="#">kobe，this is for you!</a></h4>
+                        <p><a href="#">我不知道多久才能取得辉煌，我只想尽我所能去做最出色的。什么时候也别忘了给自己一个微笑和剪刀手，因为那是最好的自己</a></p>
+                        <a href="#" class="more">更多></a>
+                    </div>
+                </div>
+
+            </div>
+
+       </div>
+       <!-- 右边的内容 -->
+       <div class="firstRight fr">
+               <!-- 用户 -->
+               <div class="user">
+                   <a href="#" class="avatar"><img src="images/avatar.jpg" alt=""></a>
+                   <p class="username">嗨！你好</p>
+                   <p class="members">
+                       <a href="#" class="gold">领淘金币抵钱</a>
+                       <a href="#" class="club">会员俱乐部</a>
+                   </p>
+                   <div class="btn">
+                       <button class="login">登录</button>
+                       <button class="register">注册</button>
+                       <button class="shop">开店</button>
+                   </div>
+               </div>
+        <!-- 举报 -->
+        <a href="#" class="tipoff">
+            <span>科比语录</span>
+            <i class="iconfont">&#xe619;</i>
+        </a>
+
+        <!-- 公告区 -->
+        <div class="notice">
+            <ul class="title">
+                <li class="active"><a href="#">公告</a></li>
+                <li><a href="#">规则</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">安全</a></li>
+                <li><a href="#">公益</a></li>
+            </ul>
+            <ul class="content clearfix">
+                <li class="item"><a href="#">如果没有天赋,那就让努力成为天赋</a></li>
+                <li><a href="#">我不想做第二个乔丹</a></li>
+                <li><a href="#">只想做第一个科比</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- 图标区域 -->
+        <table class="icon">
+            <tr>
+                <td class="item1">
+                    <a href="#">
+                        <span></span>
+                        <i>充话费</i>
+                    </a>
+                </td>
+                <td class="item2">
+                    <a href="#">
+                        <span></span>
+                        <i>旅行</i>
+                    </a>
+                </td>
+                <td class="item3">
+                    <a href="#">
+                        <span></span>
+                        <i>车险</i>
+                    </a>
+                </td>
+                <td class="item4">
+                    <a href="#">
+                        <span></span>
+                        <i>游戏</i>
+                    </a>
+                </td>
+                    
+            </tr>
+            <tr>
+                <td class="item5">
+                    <a href="#">
+                        <span></span>
+                        <i>彩票</i>
+                    </a>
+                </td>
+                <td class="item6">
+                    <a href="#">
+                        <span></span>
+                        <i>电影</i>
+                    </a>
+                </td>
+                <td class="item7">
+                    <a href="#">
+                        <span></span>
+                        <i>酒店</i>
+                    </a>
+                </td>
+                <td class="item8">
+                    <a href="#">
+                        <span></span>
+                        <i>理财</i>
+                    </a>
+                </td>
+                    
+            </tr>
+            <tr>
+                <td class="item9">
+                    <a href="#">
+                        <span></span>
+                        <i>找服务</i>
+                    </a>
+                </td>
+                <td class="item10">
+                    <a href="#">
+                        <span></span>
+                        <i>演出</i>
+                    </a>
+                </td>
+                <td class="item11">
+                    <a href="#">
+                        <span></span>
+                        <i>水电煤</i>
+                    </a>
+                </td>
+                <td class="item12">
+                    <a href="#">
+                        <span></span>
+                        <i>火车票</i>
+                    </a>
+                </td>
+                    
+            </tr>
+
+        </table>
+
+        <!-- APP -->
+        <div class="app">
+            <div class="title clearfix">
+                <h3 class="fl">阿里APP</h3>
+                <a href="#" class="fr">更多></a>
+            </div>
+            <ul class="appIcon">
+                <li><a href="#"><img src="images/timg.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/小蜜蜂.jpeg" alt=""></a></li>
+                <li><a href="#"><img src="images/微.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/微博.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/时间.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/有道.jpeg" alt=""></a></li>
+                <li><a href="#"><img src="images/淘.jpeg" alt=""></a></li>
+                <li><a href="#"><img src="images/网易.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/腾讯.jpeg" alt=""></a></li>
+                <li><a href="#"><img src="images/蘑菇.jpeg" alt=""></a></li>
+            </ul>
+
+        </div>
+       </div>
+
+    </div>
+
+    <!--好货与每日好店 -->
+    <div class="layer clearfix mt10">
+        <!-- 有好货 -->
+        <div class="goods fl">
+            <div class="head clearfix">
+                <h3 class="fl">
+                    <img src="images/goods.png" alt="有好货">
+                    <span class="iconfont">&#xe638;</span>
+                    <i>与品质生活不期而遇</i>
+                </h3>
+                <a href="#" class="fr change">换一换</a>
+            </div>
+        <ul class="list">
+            <li>
+                <a href="#"><img src="images/shop.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                <h4><a href="#">大豆家 方头奶奶鞋</a></h4>
+                <p class="text"><a href="#">一脚蹬设计，方便日常的穿脱</a></p>
+                <a href="#" class="comment">
+                    <span class="iconfont">&#xe680;</span><i>5950 人说好</i>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/shop1.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                <h4><a href="#">佳宝路转角水槽</a></h4>
+                <p class="text"><a href="#">304不锈钢，表面光洁坚固耐用</a></p>
+                <a href="#" class="comment">
+                    <span class="iconfont">&#xe680;</span><i>1111 人说好</i>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/shop2.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                <h4><a href="#">肖友秀真皮细高跟过膝</a></h4>
+                <p class="text"><a href="#">细跟尖头设计更显优雅女人味</a></p>
+                <a href="#" class="comment">
+                    <span class="iconfont">&#xe680;</span><i>1224 人说好</i>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/shop3.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                <h4><a href="#">秋冬限量</a></h4>
+                <p class="text"><a href="#">雾面质感暗红色管身，优雅而高贵</a></p>
+                <a href="#" class="comment">
+                    <span class="iconfont">&#xe680;</span><i>5950 人说好</i>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/shop4.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                <h4><a href="#">汽车盲点变道辅助器</a></h4>
+                <p class="text"><a href="#">行车安全盲区监测系统</a></p>
+                <a href="#" class="comment">
+                    <span class="iconfont">&#xe680;</span><i>5555 人说好</i>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/shop5.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                <h4><a href="#">芥末绿复古老爹鞋</a></h4>
+                <p class="text"><a href="#">芥末绿色的鞋面视觉上给人一种清新感</a></p>
+                <a href="#" class="comment">
+                    <span class="iconfont">&#xe680;</span><i>3322 人说好</i>
+                </a>
+            </li>
+        </ul>
+        </div>
+         <!-- 每日好店 -->
+        <div class="goods fr shopping">
+            <div class="goods fl">
+                <div class="head clearfix">
+                    <h3 class="fl">
+                        <img src="images/day.png" alt="有好货">
+                        <span class="iconfont">&#xe638;</span>
+                        <i>与品质生活不期而遇</i>
+                    </h3>
+                    <a href="#" class="fr change">换一换</a>
+                </div>
+            <ul class="list">
+                <li>
+                    <a href="#"><img src="images/day1.jpg_180x180q90.jpg_.webp" alt=""></a>
+                    <p class="text">
+                        <span class="iconfont">&#xe642;</span>
+                        <a href="#">【饰语】925纯银小花迷你耳钉女耳环女气质复古会动的耳钉小耳坠</a>
+                    </p>
+                    <a href="#" class="comment">
+                        <span><img src="images/图标.jpg" alt=""></span><i>爱逛***01</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/shop.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                    <p class="text">
+                        <span class="iconfont">&#xe642;</span>
+                        <a href="#">【饰语】925纯银小花迷你耳钉女耳环女气质复古会动的耳钉小耳坠</a>
+                    </p>
+                    <a href="#" class="comment">
+                        <span><img src="images/图标.jpg" alt=""></span><i>爱逛***01</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/shop.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                    <p class="text">
+                        <span class="iconfont">&#xe642;</span>
+                        <a href="#">【饰语】925纯银小花迷你耳钉女耳环女气质复古会动的耳钉小耳坠</a>
+                    </p>
+                    <a href="#" class="comment">
+                        <span><img src="images/图标.jpg" alt=""></span><i>爱逛***01</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/shop.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                    <p class="text">
+                        <span class="iconfont">&#xe642;</span>
+                        <a href="#">【饰语】925纯银小花迷你耳钉女耳环女气质复古会动的耳钉小耳坠</a>
+                    </p>
+                    <a href="#" class="comment">
+                        <span><img src="images/图标.jpg" alt=""></span><i>爱逛***01</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/shop.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                    <p class="text">
+                        <span class="iconfont">&#xe642;</span>
+                        <a href="#">【饰语】925纯银小花迷你耳钉女耳环女气质复古会动的耳钉小耳坠</a>
+                    </p>
+                    <a href="#" class="comment">
+                        <span><img src="images/图标.jpg" alt=""></span><i>爱逛***01</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/shop.jpg_180x180xzq90.jpg_.webp" alt=""></a>
+                    <p class="text">
+                        <span class="iconfont">&#xe642;</span>
+                        <a href="#">【饰语】925纯银小花迷你耳钉女耳环女气质复古会动的耳钉小耳坠</a>
+                    </p>
+                    <a href="#" class="comment">
+                        <span><img src="images/图标.jpg" alt=""></span><i>爱逛***01</i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+    </div>
+
+    <!-- 右侧固定定位导航 -->
+    <div id="tool">
+     <span class="iconfont">&#xe605;</span>
+     <div class="btn">
+       <a href="#" class="c4 active">品质 好货</a>
+       <a href="#" class="c5">好店 直播</a>
+       <a href="#" class="c6">实惠 热卖</a>
+       <a href="#" class="c7">猜你 喜欢</a>
+       <a href="#" class="item6">反馈</a>
+       <a href="#" class="">暴恐 举报</a>
+    </div>
+    </div>
+</body>
+</html>
