@@ -19,14 +19,85 @@
                 行高值计算拿上面的值乘字体的像素
             }
         </style> -->
+        <script src="jquery-3.3.1.js"></script>
+<script>
+    $(function(){
+        $('#headmassage>.fl>.sj').mouseover(function(){
+            $(this).children('div').css('display','block');
+        });
+        $('#headmassage>.fl>.sj').mouseout(function(){
+            $(this).children('div').css('display','none');
+        });
+    });
+</script>
+<script>
+    $(function(){
+        //思路：给页面设置一个滚动事件，时刻监视页面的scrollTop的值，
+        //如果这个值大于第一部分的高度，就设置第二部分为固定定位
+        //如果这个值小于第一部分的高度，就设置第二部分的定位还原。
+
+        //计算第一部分的高度
+        var topHeight = $('#headmassage').height();
+        //console.log(topHeight);
+        //计算第二部分的高度
+        var headSearchHeight = $('#headSearch').height();
+
+        //给页面设置一个滚动事件。
+        $(window).scroll(function(){
+            //1.获取页面滚出去的距离（被卷曲出去的距离）;
+            var scrollTopValue = $(window).scrollTop();
+            // console.log(scrollTopValue);
+            //2.判断，看scrollTopValue的值是不是大于第一部分的高度。
+            if(scrollTopValue >= topHeight){
+                //让第二部分固定定位
+                $('#headSearch').css({
+                    position:'fixed',
+                    top:0,
+                    left:165
+                });
+                //设置第三部分的margin-top的值为第二部分的高度
+                $('#nav').css({
+                    marginTop:headSearchHeight
+                })
+            }else{
+                //让第二部分的定位还原
+                $('#headSearch').css({
+                    position:'static',
+                    top:0
+                });
+                //设置第三部分的margin-top的值还原
+                $('#nav').css({
+                    marginTop:0
+                })
+            }
+
+        })
+    })
+</script>
 </head>
 <body>
     <!-- 头部信息 -->
     <div id="headmassage" class="clearfix layer">
         <ul class="fl">
-            <li>
-                <span>中国大陆</span>
+            <li class="sj">
+                <span class="dj">中国大陆</span>
                 <span class="iconfont" class="arrow">&#xe60b;</span>
+                <div class="two">
+                    <ul>
+                        <li><a href="#">中国</a></li>
+                        <li><a href="#">美国</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">中国</a></li>
+                        <li><a href="#">美国</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">中国</a></li>
+                        <li><a href="#">美国</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">中国</a></li>
+                        <li><a href="#">美国</a></li>
+                        <li><a href="#">日本</a></li>
+                    </ul>
+                </div>
             </li>
             <li class="mr7">
                 <a href="#" class="login mr7">亲，请登录</a>
@@ -321,21 +392,23 @@
         <!-- 公告区 -->
         <div class="notice">
             <ul class="title">
-                <li class="active"><a href="#">公告</a></li>
+                <li class="item active"><a href="#">公告</a></li>
                 <li><a href="#">规则</a></li>
                 <li><a href="#">论坛</a></li>
                 <li><a href="#">安全</a></li>
                 <li><a href="#">公益</a></li>
             </ul>
+            <div id="yc">
             <ul class="content clearfix">
                 <li class="item"><a href="#">如果没有天赋,那就让努力成为天赋</a></li>
-                <li><a href="#">我不想做第二个乔丹</a></li>
-                <li><a href="#">只想做第一个科比</a></li>
+                <li><a href="#">我不想做第二个乔丹,只想做第一个科比</a></li>
+                <li><a href="#">总有一个人要赢，那为什么不能是我</a></li>
+                <li><a href="#">salute you,my brother</a></li>
+                <li><a href="#">kobe,this is for you!</a></li>
             </ul>
-
         </div>
 
-
+        </div>
         <!-- 图标区域 -->
         <table class="icon">
             <tr>

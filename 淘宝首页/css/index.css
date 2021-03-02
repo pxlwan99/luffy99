@@ -57,13 +57,31 @@
     padding: 0 5px;
 
 }
-
-
+#headmassage>ul>li{
+    float: left;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    text-align:left;
+    line-height: 20px;
+    overflow:auto;
+    display: none;
+    position: absolute;
+}
+.two ul{
+    margin-left:5px ;
+}
+.two ul li{
+    clear: both;
+}
 
 /* 头部搜索 */
 #headSearch{
     background-color: #fff;
     padding: 24px 0 10px 0;
+    z-index: 10000;
 }
 #headSearch h1 a{
     display: block;
@@ -589,6 +607,7 @@
     width: 100%;
     color: #ff5000;
 }
+
 /* 图标区域 */
 .firstRight .icon{
     width: 100%;
